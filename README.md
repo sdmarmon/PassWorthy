@@ -1,6 +1,2 @@
-﻿# Projet 2017
-
-Projet de génie logiciel 2017. 
-
-
-IDE cible : Visual Studio 2015
+# PassWorthy
+A desktop app designed to store and generate secure passwords.
