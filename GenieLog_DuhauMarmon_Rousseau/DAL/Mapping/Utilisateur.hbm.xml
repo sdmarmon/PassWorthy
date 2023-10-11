@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="Utilisateur" table="utilisateur">
+    <id name="Id" column="util_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <property name="Identifiant" column="util_identifiant" not-null="true"/>
+    <property name="Mdp" column="util_mdp" not-null="true"/>
+    <property name="Question" column="util_question" not-null="true"/>
+    <property name="Reponse" column="util_reponse" not-null="true"/>
+  </class>
+</hibernate-mapping>

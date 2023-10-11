@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="Categorie" table="categorie">
+    <id name="Id" column="cate_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <property name="Nom" column="cate_nom" not-null="true"/>
+  </class>
+</hibernate-mapping>

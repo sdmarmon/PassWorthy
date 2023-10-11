@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="Appartenance" table="appartenance">
+    <id name="Id" column="appartenance_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <many-to-one name="Cate" class="Categorie" column="cate_id"/>
+    <many-to-one name="Util" class="Utilisateur" column="util_id"/>
+  </class>
+</hibernate-mapping>

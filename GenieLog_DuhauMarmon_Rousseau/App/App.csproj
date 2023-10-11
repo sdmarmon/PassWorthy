@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B3A0843-2905-46EC-A875-1029FC314F44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App</RootNamespace>
+    <AssemblyName>App</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterCategorie_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterCategorie_Form.Designer.cs">
+      <DependentUpon>AjouterCategorie_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_form.Designer.cs">
+      <DependentUpon>Ajouter_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerMdp_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangerMdp_Form.Designer.cs">
+      <DependentUpon>ChangerMdp_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoisirAjout_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoisirAjout_Form.Designer.cs">
+      <DependentUpon>ChoisirAjout_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion_Form.Designer.cs">
+      <DependentUpon>Connexion_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenererMdp_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenererMdp_Form.Designer.cs">
+      <DependentUpon>GenererMdp_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inscription_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscription_Form.Designer.cs">
+      <DependentUpon>Inscription_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mdp_oublie_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdp_oublie_Form.Designer.cs">
+      <DependentUpon>Mdp_oublie_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierCate_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierCate_Form.Designer.cs">
+      <DependentUpon>ModifierCate_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjouterCategorie_Form.resx">
+      <DependentUpon>AjouterCategorie_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouter_form.resx">
+      <DependentUpon>Ajouter_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangerMdp_Form.resx">
+      <DependentUpon>ChangerMdp_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoisirAjout_Form.resx">
+      <DependentUpon>ChoisirAjout_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion_Form.resx">
+      <DependentUpon>Connexion_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenererMdp_Form.resx">
+      <DependentUpon>GenererMdp_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscription_Form.resx">
+      <DependentUpon>Inscription_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mdp_oublie_Form.resx">
+      <DependentUpon>Mdp_oublie_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierCate_Form.resx">
+      <DependentUpon>ModifierCate_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{51f1b538-31aa-4007-81ff-1fa6261b35d3}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{1b4f45a0-a0c8-478d-8564-a728120c8195}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
